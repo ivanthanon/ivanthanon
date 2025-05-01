@@ -62,10 +62,10 @@ html {
 }
 
 .left {
-  width: 30%;
+  width: 25%;
   background-color: #00a0e5;
   display: flex;
-  height: 1600px;
+  height: 1900px;
   flex-direction: column;
   align-items: center;
 }
@@ -110,6 +110,7 @@ html {
 
 li {
   font-weight: normal;
+  font-size: 20px;
 }
 
 .languagesandothers {
@@ -125,12 +126,12 @@ li {
 
 .languagesandothers li {
   font-weight: normal;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .right {
   width: 70%;
-  height: 1400px;
+  height: 1900px;
   background-color: white;
 }
 
@@ -184,12 +185,16 @@ li {
   font-style: italic;
 }
 
+.my_description p {
+  font-size: 20px;
+}
+
 .education,
 .skills {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 20px;
   margin-top: 5%;
   text-align: center;
 }
@@ -206,7 +211,7 @@ li {
 
   display: flex;
   font-family: century;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .date,
