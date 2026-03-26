@@ -6,9 +6,8 @@
 
 body,
 html {
-  min-height: 100vh;
+  height: auto;
   min-width: 320px;
-  height: 100%;
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
