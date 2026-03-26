@@ -7,12 +7,15 @@
 body,
 html {
   min-height: 1600px;
-  min-width: 800px;
+  min-width: 320px;
   height: 100%;
   display: flex;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  color: #2c3e50;
+  background-color: #f8f9fa;
 }
 
 .entity,
@@ -67,18 +70,35 @@ html {
 
 .socialnetwork {
   display: flex;
-  margin-left: 20px;
-  margin-top: 50px;
+  margin-left: 0;
+  margin-top: 60px;
+  gap: 30px;
+  justify-content: center;
 }
 
 
 .left {
   width: 25%;
-  background-color: #00a0e5;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   display: flex;
   height: 1700px;
   flex-direction: column;
   align-items: center;
+  padding: 40px 20px;
+  color: white;
+}
+
+.left h2,
+.left h3 {
+  color: white;
+}
+
+.left li {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.left p {
+  color: rgba(255, 255, 255, 0.95);
 }
 
 .chess {
@@ -101,66 +121,92 @@ html {
 
 .photo {
   margin-top: 15px;
-  width: 120px;
-  height: 140px;
+  width: 140px;
+  height: 160px;
   background-image: url("../img/fotomiacv.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 12px;
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .job {
   margin-top: 10%;
   text-align: center;
-  height: 30px;
+  height: auto;
   width: 100%;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  font-weight: bold;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: white;
+  letter-spacing: 0.5px;
 }
 
 li {
-  font-weight: normal;
-  font-size: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  margin-left: 0;
 }
 
 .languagesandothers {
   margin-top: 20%;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  font-weight: bold;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-weight: 600;
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 18px;
+  font-size: 16px;
+  color: white;
+  width: 100%;
+}
+
+.languagesandothers h3 {
+  margin-bottom: 12px;
+  font-size: 16px;
+  letter-spacing: 0.5px;
 }
 
 .languagesandothers li {
-  font-weight: normal;
-  font-size: 20px;
+  font-weight: 500;
+  font-size: 15px;
+  list-style: none;
+  padding: 4px 0;
 }
 
 .right {
   width: 70%;
   height: 1700px;
-  background-color: white;
+  background-color: #ffffff;
+  padding: 40px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
 .mynameandcontact {
-  margin-top: 1%;
-  margin-left: 4%;
-  margin-right: 4%;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
   display: flex;
   justify-content: space-between;
+  border-bottom: 2px solid #e8ecf1;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .myname {
   height: auto;
-  width: 46%;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  font-size: 37px;
-  font-weight: bold;
+  width: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: #2c3e50;
+  letter-spacing: -0.5px;
+}
+
+.myname p {
+  white-space: normal;
+  margin: 0;
 }
 
 .contact {
@@ -170,14 +216,46 @@ li {
   height: auto;
 }
 
+a {
+  color: #667eea;
+  text-decoration: none;
+  border-bottom: 1px solid #667eea;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #764ba2;
+  border-bottom-color: #764ba2;
+}
+
+a:visited {
+  color: #667eea;
+}
+
+h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+}
+
+.right h3 {
+  color: #2c3e50;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
 .my_description {
-  margin-left: 4%;
+  margin-left: 0;
   width: 100%;
   height: auto;
-  text-align: left justify;
-  font-family: Century;
-  font-weight: 18px;
-  margin-top: 5%;
+  text-align: justify;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-weight: 400;
+  margin-top: 0;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 40px;
 }
 
 .link {
@@ -192,81 +270,85 @@ li {
 }
 
 .whoami {
-  font-weight: bold;
+  font-weight: 600;
   font-style: italic;
+  color: #667eea;
 }
 
 .my_description p {
-  font-size: 20px;
+  font-size: 16px;
+  margin-bottom: 16px;
+  line-height: 1.7;
 }
 
 .education,
 .skills {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  font-weight: bold;
-  font-size: 20px;
-  margin-top: 5%;
-  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  margin-top: 0;
+  text-align: left;
+  color: #2c3e50;
+  border-bottom: 2px solid #667eea;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
 }
 
 .skills {
-  margin-top: 10%;
+  margin-top: 40px;
 }
 
 .line {
-  margin-top: 3%;
-  margin-left: 4%;
-  margin-right: 4%;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
   height: auto;
-
   display: flex;
-  font-family: century;
-  font-size: 18px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 15px;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #ecf0f1;
+}
+
+.line:last-of-type {
+  border-bottom: none;
 }
 
 .date,
 .dates {
-  width: 10%;
+  width: 12%;
   height: auto;
   white-space: nowrap;
-
+  font-weight: 500;
+  color: #667eea;
+  font-size: 13px;
+  flex-shrink: 0;
 }
 
 .titles {
   margin-left: 15px;
   text-align: left;
-  font-weight: bold;
-  font-style: italic;
-  width: 86%;
+  font-weight: 600;
+  font-style: normal;
+  width: 88%;
   height: auto;
-}
-
-.tituloconinsignia {
-  margin-left: 0px;
-  text-align: left;
-  font-weight: bold;
-  font-style: italic;
-  display: flex;
-  width: 86%;
-  height: 40px;
-}
-
-.meta {
-  font-weight: normal;
-}
-
-.tituloconinsignia span {
-  font-weight: normal;
+  color: #2c3e50;
+  line-height: 1.6;
 }
 
 .titles span {
-  font-weight: normal;
+  font-weight: 400;
+  display: block;
+  margin-top: 8px;
+  color: #555;
 }
 
 .titles li {
-  font-weight: normal;
-  margin-left: 40px;
+  font-weight: 400;
+  margin-left: 20px;
+  margin-top: 6px;
+  color: #666;
 }
 
 .frontend {
@@ -495,5 +577,143 @@ li {
 }
 
 p, li {
-  line-height: 1.5; /* Puedes ajustar este valor a 1.8 o 2 si lo prefieres más amplio */
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .left {
+    width: 30%;
+  }
+
+  .right {
+    width: 70%;
+  }
+}
+
+@media (max-width: 768px) {
+  body,
+  html {
+    min-height: auto;
+    flex-direction: column;
+  }
+
+  .left {
+    width: 100%;
+    height: auto;
+    padding: 40px 20px;
+    min-height: auto;
+  }
+
+  .right {
+    width: 100%;
+    height: auto;
+    padding: 30px 20px;
+  }
+
+  .myname {
+    font-size: 32px;
+  }
+
+  .my_description p {
+    font-size: 15px;
+  }
+
+  .titles,
+  .tituloconinsignia {
+    width: 100%;
+  }
+
+  .line {
+    flex-wrap: wrap;
+  }
+
+  .date,
+  .dates {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+
+  .titles {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .frontend,
+  .desktop {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .left {
+    padding: 30px 15px;
+  }
+
+  .right {
+    padding: 20px 15px;
+  }
+
+  .myname {
+    font-size: 24px;
+  }
+
+  .my_description p {
+    font-size: 14px;
+    text-align: left;
+  }
+
+  .photo {
+    width: 100px;
+    height: 120px;
+  }
+
+  .education,
+  .skills {
+    font-size: 16px;
+  }
+}
+
+/* Print Styles for PDF Export */
+@media print {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  body,
+  html {
+    display: flex;
+    min-height: auto;
+    height: auto;
+  }
+
+  .left {
+    width: 25%;
+    height: auto;
+    page-break-after: avoid;
+  }
+
+  .right {
+    width: 75%;
+    height: auto;
+    box-shadow: none;
+  }
+
+  a {
+    color: #667eea;
+    text-decoration: none;
+    border: none;
+  }
+
+  .iconlinkedin:hover,
+  .icongithub:hover {
+    width: 40px;
+    height: 40px;
+  }
+
+  .line {
+    page-break-inside: avoid;
+  }
 }
