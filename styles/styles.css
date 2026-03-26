@@ -253,6 +253,7 @@ h2, h3, h4 {
 .my_description {
   margin-left: 0;
   width: 100%;
+  max-width: 50%;
   height: auto;
   text-align: justify;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -347,10 +348,12 @@ h3 {
   font-weight: 600;
   font-style: normal;
   width: 88%;
+  max-width: 90%;
   height: auto;
   color: #2c3e50;
   line-height: 1.5;
   font-size: 13px;
+  word-break: break-word;
 }
 
 .titles span {
