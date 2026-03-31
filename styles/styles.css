@@ -250,6 +250,12 @@ li {
   white-space: nowrap;
 }
 
+.linkedin {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 5px;
+}
+
 a {
   color: #667eea;
   text-decoration: none;
